@@ -1,3 +1,7 @@
+body {
+	font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+}
+
 form{
 	margin-bottom: 0;
 }
@@ -16,7 +20,7 @@ form{
 /* Home */
 
 html.home{
-	background: #EDECEA;
+	background: #a7dde8;
 }
 
 #home{
@@ -32,77 +36,202 @@ html.home{
 	width: 100%;
 	height: 446px;
 	background: image-url("home/hero.jpg") center center no-repeat;
-	background-size: 1600px 446px;
+	background-size: cover;
 	overflow: hidden;
 	position: relative;
 	letter-spacing: .09em;
 	margin: 0 auto;
 }
 
+.flight-container {
+  width: 250px;
+  height: 335px;
+  background-color: #353535;
+  overflow-y: scroll;
+	overflow-x: hidden;
+	position: absolute;
+	right: 80px;
+	top: 90px;
+	border-radius: 5px;
+}
+
+.flight-container::-webkit-scrollbar {
+  /* This is the magic bit */
+  display: none;
+}
+
+.ticket {
+  margin-left: 2.5%;
+  width: 95%;
+  background-color: #fff;
+  height: 300px;
+  margin-top: 5px;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.ticket .circle {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	top: calc(50% - 12px);
+	background-color: #353535;
+}
+
+.ticket .circle.left {
+	left: -14px;
+}
+
+.ticket .circle.right {
+	right: -14px;
+}
+
+.ticket hr {
+	position: absolute;
+	top: calc(50% - 7px);
+	border-top: 1px dashed #353535;
+	width: 80%;
+	left: 10%;
+}
+
+.ticket .top, .ticket .bottom {
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	height: 46%;
+	border-top: 1px solid #353535;
+}
+
+.ticket .top {
+	top: 4%;
+}
+
+.ticket .bottom {
+	top: 54%;
+}
+
+.trip-airports {
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	color: #353535;
+}
+
+.trip-airports .from, .trip-airports .to, .arrow {
+	display: inline-block;
+}
+
+.arrow {
+	line-height: 0px;
+}
+
+.trip-airports .city, .price .label, .date .label {
+	font-size: 10px;
+	opacity: 0.5;
+}
+
+.trip-airports .code, .arrow, .price .found-price, .date .found-date {
+	font-size: 30px;
+	font-weight: 900;
+	letter-spacing: -1px;
+}
+
+.arrow {
+	font-size: 25px;
+	line-height: 10px;
+}
+
+.trip-details .price, .trip-details .date {
+	display: inline-block;
+	margin-top: 14px;
+}
+
+.date .found-date {
+	word-spacing: -5px;
+	margin-left: 12px;
+}
+
+.price .found-price {
+	margin-right: 12px;
+}
+
+
+
+
 #home .hero .large{
-	font-weight: bold;
+	font-weight: 900;
 	font-size: 40px;
-	color: #074E6F;
-	text-transform: uppercase;
-	margin: 85px 0 0 136px;
+	color: #fff;
+	margin: 85px 0 0 100px;
 	position: relative;
 	z-index: 2;
-	letter-spacing: 2px;
+	letter-spacing: -1px;
 }
 
 #home .hero .small{
-	font-weight: bold;
-	color: #955F5D;
-	font-size: 18px;
-	margin: 10px 0 0 115px;
-	line-height: 30px;
+	color: #fff;
+	font-size: 25px;
+	margin: 10px 0 0 136px;
 	position: relative;
 	z-index: 2;
-	text-transform: uppercase;
 	text-align: left;
 	width: 375px;
-	letter-spacing: 1px;
+	letter-spacing: -1px;
+}
+
+#home .hero .logo {
+	position: absolute;
+	left: 110px;
+	bottom: 30px;
+	width: 256px;
+	height: 42px;
+	background: image-url("home/logo.png") center no-repeat;
+	background-size: 256px 42px;
 }
 
 #home .form-wrap{
 	height: 80px;
-	width: 411px;
+	width: 600px;
 	margin: 23px auto 0;
 }
 
 #home .form-wrap .key{
-	width: 46px;
-	height: 19px;
+	width: 52px;
+	height: 22px;
 	margin: 0 auto;
 	background: image-url("home/key.png") 0 0 no-repeat;
-	background-size: 46px 19px;
+	background-size: 52px 22px;
 }
 
 #home .form-wrap .byline{
-	font-size: 15px;
+	font-size: 20px;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: #3C3C3C;
 	text-align: center;
 	font-weight: bold;
-	letter-spacing: 2px;
+	letter-spacing: 0;
 	margin: 15px 0;
 }
 
 #home .form-wrap .email{
 	float: left;
+	margin-left: 100px;
 	font-size: 13px;
 	padding: 8px 0 8px 10px;
-	border: 1px solid #074E6F;
 	width: 256px;
 	outline: none;
 	letter-spacing: 1px;
+	border-radius: 1px;
+	outline: none;
 }
 
 #home .form-wrap .submit{
 	width: 143px;
-	background: #074E6F;
+	background: #f97d7e;
 	float: left;
-	height: 37px;
+	height: 35px;
 	line-height: 37px;
 	color: #FFF;
 	font-size: 13px;
@@ -232,7 +361,7 @@ html.home{
 }
 
 .brandon{
-	font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
 
 #refer{
@@ -311,12 +440,12 @@ html.home{
 	line-height: 56px;
 	letter-spacing: 4px;
 	text-align: center;
-	width: 284px;
+	width: 294px;
 }
 
 #refer .share-wrap{
 	float: right;
-	width: 400px;
+	width: 440px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
@@ -338,6 +467,8 @@ html.home{
 	color: #074E6F;
 	margin-top: 18px;
 	letter-spacing: .13em;
+	text-align: left;
+	width: 600px;
 }
 
 #refer .share-wrap .subtitle{
@@ -617,7 +748,7 @@ only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 	#home .hero{
 		background: image-url("home/hero@2x.jpg") center center no-repeat;
-		background-size: 1600px 446px;
+		background-size: cover
 	}
 
 	#home .form-wrap .key{
