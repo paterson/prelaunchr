@@ -1,5 +1,7 @@
+// @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
 body {
-	font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	font-family: "Helvetica", "Arial", sans-serif;
 }
 
 form{
@@ -64,11 +66,19 @@ html.home{
   margin-left: 2.5%;
   width: 95%;
   background-color: #fff;
-  height: 300px;
+  height: 380px;
   margin-top: 5px;
 	border-radius: 5px;
 	position: relative;
 	overflow: hidden;
+}
+
+.ticket .ticket-logo {
+	background: image-url("home/logo-ticket.png") center no-repeat;
+	background-size: 217px 23px;
+	width: 100%;
+	height: 30px;
+	margin-top: -3px
 }
 
 .ticket .circle {
@@ -110,6 +120,10 @@ html.home{
 
 .ticket .bottom {
 	top: 54%;
+}
+
+.code, .found-date, .found-price {
+	color: #444545;
 }
 
 .trip-airports {
@@ -157,9 +171,6 @@ html.home{
 	margin-right: 12px;
 }
 
-
-
-
 #home .hero .large{
 	font-weight: 900;
 	font-size: 40px;
@@ -168,22 +179,26 @@ html.home{
 	position: relative;
 	z-index: 2;
 	letter-spacing: -1px;
+	text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.35);
 }
 
 #home .hero .small{
 	color: #fff;
-	font-size: 25px;
-	margin: 10px 0 0 136px;
+	font-size: 20px;
+	margin: 20px 0 0 101px;
 	position: relative;
 	z-index: 2;
 	text-align: left;
 	width: 375px;
-	letter-spacing: -1px;
+	letter-spacing: 0px;
+	line-height: 23px;
+	text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.35);
+	font-weight: 100;
 }
 
 #home .hero .logo {
 	position: absolute;
-	left: 110px;
+	left: 50px;
 	bottom: 30px;
 	width: 256px;
 	height: 42px;
@@ -211,7 +226,7 @@ html.home{
 	color: #3C3C3C;
 	text-align: center;
 	font-weight: bold;
-	letter-spacing: 0;
+	letter-spacing: -1px;
 	margin: 15px 0;
 }
 
@@ -377,7 +392,7 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+	background: #2d2d2d;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -392,30 +407,30 @@ html.home{
 #refer .header p{
 	float: left;
 	color: #FFF;
-	font-weight: 500;
-	text-transform: uppercase;
-	line-height: 50px;
+	font-weight: bold;
+	line-height: 55px;
 }
 
 #refer .header .byline{
-	font-size: 14px;
+	font-size: 25px;
 }
 
 #refer .header .logo{
-	font-weight: normal;
-	font-size: 0;
-	line-height: 0;
-	margin-right: 14px;
-	letter-spacing: 1px;
+	position: absolute;
+	left: 0;
+	top: 0;
 	background: image-url("refer/logo.png") 0 0 no-repeat;
-	background-size: 106px 19px;
-	height: 19px;
-	width: 106px;
-	margin-top: 15px;
+	background-size: 35px 195px;
+	height: 35px;
+	width: 195px;
+	// margin-top: 15px;
+	margin-top: 8px;
+	margin-left: 10px;
 }
 
 #refer .hero{
-	background: #F1F0EE;
+	background: image-url("refer/mammoth.png") center -480px no-repeat;
+	background-size: cover;
 	height: 391px;
 	overflow: hidden;
 }
@@ -423,33 +438,32 @@ html.home{
 #refer .mammoth{
 	width: 612px;
 	height: 394px;
-	background: image-url("refer/mammoth.png") 0 0 no-repeat;
-	background-size: 610px 394px;
 	overflow: hidden;
 	margin-top: 15px;
 	float: left;
 }
 
-#refer .mammoth .need{
+#refer .mammoth .need {
 	color: #FFF;
-	font-size: 38px;
+	font-size: 60px;
 	text-transform: uppercase;
 	font-weight: bold;
 	margin: 102px 0 0 72px;
 	display: block;
-	line-height: 56px;
-	letter-spacing: 4px;
+	letter-spacing: -1px;
 	text-align: center;
-	width: 294px;
+	width: 550px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#refer .share-wrap{
+#refer .share-wrap {
 	float: right;
 	width: 440px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
 	margin-right: 60px;
+	margin-top: 30px;
 }
 
 #refer .share-wrap .why{
@@ -461,21 +475,24 @@ html.home{
 
 #refer .share-wrap .title{
 	font-size: 30px;
-	line-height: 40px;
+	line-height: 50px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: #fff;
 	margin-top: 18px;
-	letter-spacing: .13em;
-	text-align: left;
-	width: 600px;
+	letter-spacing: 0;
+	text-align: center;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 #refer .share-wrap .subtitle{
-	color: #565656;
+	color: #fff;
 	font-size: 14px;
 	text-transform: none;
 	margin-top: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 #refer .share-wrap .copy-link{
@@ -758,11 +775,11 @@ only screen and (min-device-pixel-ratio: 2) {
 
 	#refer .header .logo{
 		background: image-url("refer/logo@2x.png") 0 0 no-repeat;
-		background-size: 106px 19px;
+		background-size: 195px 35px;
 	}
 
 	#refer .mammoth{
-		background: image-url("refer/mammoth@2x.png") 0 0 no-repeat;
+		// background: image-url("refer/mammoth@2x.png") 0 0 no-repeat;
 		background-size: 610px 394px;
 	}
 
@@ -800,4 +817,101 @@ only screen and (min-device-pixel-ratio: 2) {
 		background: image-url("refer/caret-selected@2x.png") center center no-repeat;
 		background-size: 16px 10px;
 	}
+}
+
+@media (max-width:769px){
+
+	#home .hero .large{
+		font-weight: 800;
+		font-size: 30px;
+		margin: 45px 0 0 10px;
+		line-height: 35px;
+	}
+
+	#home .hero .small{
+		font-size: 18px;
+		margin: 20px 0 0 10px;
+	}
+
+	#home .hero .logo {
+		position: absolute;
+		left: 7px;
+		bottom: 100px;
+		width: 256px;
+		height: 42px;
+	 	background: image-url("home/logo.png") center no-repeat;
+		background-size: 256px 42px;
+	}
+
+	#home .hero .scroll-down {
+		color: #fff;
+		position: absolute;
+		top: 90vh;
+		width: 100%;
+		text-align: center;
+		height: 42px;
+		font-size: 27px;
+		opacity: 0.8;
+	}
+
+	#home .form-wrap {
+		width: 100%;
+	}
+
+	#home .form-wrap .email {
+		width: 90%;
+		margin-left: 2.5%;
+		height: 34px;
+	}
+
+	#home .form-wrap .submit {
+		width: 75%;
+		margin-left: 12.5%;
+	}
+
+	#refer .hero{
+		background: image-url("refer/mammoth.png") center center no-repeat;
+		background-size: cover;
+		overflow: hidden;
+	}
+
+	#refer .header .byline {
+		display: none;
+	}
+
+	#refer .mammoth {
+		display: none;
+	}
+
+	#refer .page-content {
+		width: 100%;
+	}
+
+	#refer .share-wrap {
+		float:none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.callout {
+		display: none;
+
+	}
+
+	.products {
+		display: none;
+	}
+
+	.progress {
+		display: none;
+	}
+
+}
+
+@media (max-width:767px){
+
+	.flight-container {
+		display: none;
+	}
+
 }

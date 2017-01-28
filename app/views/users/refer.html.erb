@@ -1,15 +1,15 @@
 <div class="header">
+  <p class="logo brandon"></p>
   <div class="content">
-    <p class="logo brandon">Harry&#8217;s</p>
-    <p class="byline brandon">THANK YOU FOR SIGNING UP</p>
+    <p class="byline brandon">Thank You For Signing Up</p>
   </div>
 </div>
 
 <div class="hero">
+  <div class="mammoth">
+    <span class="need brandon">FREE FLIGHT<br>GIVEAWAY</span>
+  </div>
   <div class="page-content clearfix">
-    <div class="mammoth">
-      <span class="need brandon">FREE FLIGHT<br>GIVEAWAY</span>
-    </div>
     <div class="share-wrap">
       <!-- <p class="why brandon">Don't leave your friends behind</p> -->
       <p class="title brandon">INVITE FRIENDS &<br>EARN A FREE MEMBERSHIP</p>
@@ -45,7 +45,7 @@
   <div class="page-content">
     <p class="callout brandon">Here's How It Works:</p>
     <ul class="products clearfix">
-      <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Harry's Product</p></li>
+      <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">COOL STUFF FROM US</p></li>
       <% stops.each do |stop| %>
         <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
           <div class="circle"><%= stop["count"] %></div>
@@ -64,6 +64,7 @@
         <div class="bar clearfix"></div>
       </div>
     </div>
+
 
     <%
       words = ''
