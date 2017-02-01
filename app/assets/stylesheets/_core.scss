@@ -73,6 +73,15 @@ html.home{
 	overflow: hidden;
 }
 
+.ticket-background {
+	background: image-url("home/ticket.png") center no-repeat;
+	background-size: 234px 1719px;
+	width: 97%;
+	margin-left: 1.5%;
+	height: 1719px;
+	margin-top: 10px;
+}
+
 .ticket .ticket-logo {
 	background: image-url("home/logo-ticket.png") center no-repeat;
 	background-size: 217px 23px;
