@@ -82,104 +82,6 @@ html.home{
 	margin-top: 10px;
 }
 
-.ticket .ticket-logo {
-	background: image-url("home/logo-ticket.png") center no-repeat;
-	background-size: 217px 23px;
-	width: 100%;
-	height: 30px;
-	margin-top: -3px
-}
-
-.ticket .circle {
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	border-radius: 100%;
-	top: calc(50% - 12px);
-	background-color: #353535;
-}
-
-.ticket .circle.left {
-	left: -14px;
-}
-
-.ticket .circle.right {
-	right: -14px;
-}
-
-.ticket hr {
-	position: absolute;
-	top: calc(50% - 7px);
-	border-top: 1px dashed #353535;
-	width: 80%;
-	left: 10%;
-}
-
-.ticket .top, .ticket .bottom {
-	position: absolute;
-	width: 90%;
-	left: 5%;
-	height: 46%;
-	border-top: 1px solid #353535;
-}
-
-.ticket .top {
-	top: 4%;
-}
-
-.ticket .bottom {
-	top: 54%;
-}
-
-.code, .found-date, .found-price {
-	color: #444545;
-}
-
-.trip-airports {
-	width: 100%;
-	text-align: center;
-	margin-top: 10px;
-	color: #353535;
-}
-
-.trip-airports .from, .trip-airports .to, .arrow {
-	display: inline-block;
-}
-
-.arrow {
-	line-height: 0px;
-}
-
-.trip-airports .city, .price .label, .date .label {
-	font-size: 10px;
-	opacity: 0.5;
-}
-
-.trip-airports .code, .arrow, .price .found-price, .date .found-date {
-	font-size: 30px;
-	font-weight: 900;
-	letter-spacing: -1px;
-}
-
-.arrow {
-	font-size: 25px;
-	line-height: 10px;
-}
-
-.trip-details .price, .trip-details .date {
-	display: inline-block;
-	margin-top: 14px;
-}
-
-.date .found-date {
-	word-spacing: -5px;
-	margin-left: 12px;
-}
-
-.price .found-price {
-	margin-right: 12px;
-}
-
 #home .hero .large{
 	font-weight: 900;
 	font-size: 40px;
@@ -194,7 +96,7 @@ html.home{
 #home .hero .small{
 	color: #fff;
 	font-size: 20px;
-	margin: 20px 0 0 101px;
+	margin: 10px 0 0 101px;
 	position: relative;
 	z-index: 2;
 	text-align: left;
@@ -208,11 +110,13 @@ html.home{
 #home .hero .logo {
 	position: absolute;
 	left: 50px;
-	bottom: 30px;
+	bottom: 13px;
 	width: 256px;
 	height: 42px;
 	background: image-url("home/logo.png") center no-repeat;
-	background-size: 256px 42px;
+	background-size: 256px 32px;
+
+
 }
 
 #home .form-wrap{
@@ -429,8 +333,8 @@ html.home{
 	left: 0;
 	top: 0;
 	background: image-url("refer/logo.png") 0 0 no-repeat;
-	background-size: 35px 195px;
-	height: 35px;
+	background-size: 32px 195px;
+	height: 32px;
 	width: 195px;
 	// margin-top: 15px;
 	margin-top: 8px;
