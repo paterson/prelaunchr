@@ -15,29 +15,29 @@ class User < ActiveRecord::Base
 
   REFERRAL_STEPS = [
     {
-      'count' => 5,
-      'html' => '6 MONTH<br>MEMBERSHIP',
+      'count' => 1,
+      'html' => 'BALLOT FOR  <br> FREE FLIGHT',
       'class' => 'two',
       'image' =>  ActionController::Base.helpers.asset_path(
         'refer/cream-tooltip@2x.png')
     },
     {
-      'count' => 10,
-      'html' => 'ONE YEAR<br>MEMBERSHIP',
+      'count' => 5,
+      'html' => '6 MONTH FREE<br>PREMIUM SUBSCRIPTION',
       'class' => 'three',
       'image' => ActionController::Base.helpers.asset_path(
         'refer/truman@2x.png')
     },
     {
-      'count' => 25,
-      'html' => 'LIFETIME<br>MEMBERSHIP',
+      'count' => 10,
+      'html' => '1 YEAR FREE <br> PREMIUM SUBSCRIPTION',
       'class' => 'four',
       'image' => ActionController::Base.helpers.asset_path(
         'refer/winston@2x.png')
     },
     {
-      'count' => 50,
-      'html' => 'FREE FLIGHT +<br>LIFETIME MEMBERSHIP',
+      'count' => 25,
+      'html' => 'LIFTIME FREE <br> PREMIUM SUBSCRIPTION',
       'class' => 'five',
       'image' => ActionController::Base.helpers.asset_path(
         'refer/blade-explain@2x.png')
