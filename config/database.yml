@@ -1,8 +1,12 @@
 development:
-  adapter: postgresql
-  database: prelaunchr_development
-  host: localhost
+ adapter: postgresql
+ database: prelaunchr_development
+ host: localhost
+ username: nader
+ password: nader
 test:
-  adapter: postgresql
-  database: prelaunchr_test
-  host: localhost
+ adapter: postgresql
+ database: prelaunchr_test
+ host: localhost
+ username: nader
+ password: nader
