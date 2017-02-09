@@ -18,7 +18,10 @@ class UsersController < ApplicationController
     email = params[:user][:email]
     
     # If the user already exists, redirect to the refer a friend page.
-    return redirect_to '/refer-a-friend' if User.exists?(email: email)
+    if User.exists?(email: email)
+      cookies[:h_email] = { value: email }
+      return redirect_to '/refer-a-friend'
+    end
     
     @user = User.new(email: email)
     @user.referrer = User.find_by_referral_code(ref_code) if ref_code
